@@ -1,11 +1,11 @@
 	/**********************************************************************
-	*  Author: Neha Kapoor (neha@jobshout.org)
-	*  Project Lead: Balinder WALIA (bwalia@jobshout.org)
+	*  Author: Neha Kapoor (neha@rootcrm.org)
+	*  Project Lead: Balinder WALIA (bwalia@rootcrm.org)
 	*  Project Lead Web...: https://twitter.com/balinderwalia
-	*  Name..: Jobshout Server NodeJS
-	*  Desc..: Jobshout Server (part of Jobshout Suite of Apps)
-	*  Web: http://jobshout.org
-	*  License: http://jobshout.org/LICENSE.txt
+	*  Name..: ROOTCRM
+	*  Desc..: Root CRM (part of RootCrm Suite of Apps)
+	*  Web: http://rootcrm.org
+	*  License: http://rootcrm.org/LICENSE.txt
 	**/
 
 	/**********************************************************************
@@ -29,13 +29,13 @@ module.exports = function(init) {
 	app.set('view engine', 'ejs')
 	
 	//we need this for pm2
-	//app.set('views',__dirname + '/../views')
+	app.set('views',__dirname + '/../views')
 	
 	// Request body parsing middleware should be above methodOverride
 	app.use(bodyParser.urlencoded({extended: true}))
 	
 		/// Setting the app router and static folder
-	app.use(express.static(path.resolve('./public')));	
+	app.use(express.static(path.resolve('./public')));
 	
 	// Return Express server instance
 	return app;

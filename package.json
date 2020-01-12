@@ -4,7 +4,7 @@
   "description": "Tenthmatrix - Web design development and marketing, iPhone applications, iOS development, Mac apps, Android apps",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon website.js",
+  	"dev": "nodemon website.js",
     "test": "node website.js"
   },
   "author": "",
@@ -15,7 +15,6 @@
     "express": "^4.14.0",
     "mongodb": "^2.2.9",
     "nodemon": "^1.10.2",
-    "path": "^0.12.7",
-    "twitter": "^1.7.0"
+    "path": "^0.12.7"
   }
 }
